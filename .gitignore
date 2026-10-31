@@ -3,10 +3,13 @@
 .env.*
 !.env.example
 
-# Python
+# Python 虚拟环境（统一放在 backend/.venv）
+.venv/
+backend/.venv/
+
+# Python 缓存与构建
 __pycache__/
 *.py[cod]
-.venv/
 *.egg-info/
 dist/
 build/
@@ -17,6 +20,10 @@ frontend/dist/
 
 # 上传文件
 backend/uploads/
+
+# 数据库迁移（如有本地数据）
+*.db
+*.sqlite
 
 # IDE
 .idea/
